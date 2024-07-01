@@ -12,8 +12,8 @@ pygame.init()
 
 screen = pygame.display.set_mode([1250, 750])
 
+# Here you can change the rate of the simulation
 testSpeed = 0.005
-
 
 # Here you can initialize planets (you still need to ADD them TO the LIST though in LINE 35)
 #         (x Pos, y Pos, v initial, radius, density, speed of sim)
@@ -30,7 +30,7 @@ p6 = Planet(900, 250, [400, 200], 4, 50, testSpeed, screen)
 p7 = Planet(900, 250, [400, 200], 50, 50, testSpeed, screen)
 
 
-# list of planets (IF YOU WANT ANOTHER PLANET OR IF YOU WANT TO ADD ONE YOU NEED TO CHANGE THE LIST)
+# list of planets (IF YOU WANT TO ADD ONE YOU NEED TO ADD IT TO THE LIST)
 planets = [p0, p1, p3, p4, p5, p6]
 
 
@@ -64,7 +64,6 @@ while running:
 
     screen.fill((50, 50, 50))
 
-    #CODE GO BELOW
     collidedPs = []
 
 
